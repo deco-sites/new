@@ -1,4 +1,6 @@
-import { withManifest } from "$live/clients/withManifest.ts";
-import type { Manifest } from "./live.gen.ts";
+import { proxy } from "deco/clients/withManifest.ts";
+import type { Manifest } from "./manifest.gen.ts";
 
-export const Runtime = withManifest<Manifest>();
+export const invoke = proxy<
+  Manifest
+>();

@@ -51,9 +51,6 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variable files
-.env*
-
 .cache/
 
 # Mac files
@@ -69,8 +66,14 @@ yarn-error.log
 dist/
 server/
 
-# Deno.lock
+import_map.local.json
 deno.lock
 
 # db files
 .config.json
+# Fresh build directory
+_fresh/
+
+# Deco files
+_docker_deps.ts
+.metadata/changeset.json
